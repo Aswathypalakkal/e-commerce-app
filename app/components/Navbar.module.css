@@ -1,0 +1,30 @@
+.navbar {
+  height: 64px;
+  padding: 0 24px;
+  background-color: #0f172a;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: #38bdf8;
+}
