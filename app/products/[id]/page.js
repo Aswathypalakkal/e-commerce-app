@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import { getProductById } from "../../../services/api";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/cartSlice";
+import { useParams } from "next/navigation";
 
 export default function ProductDetails({ params }) {
-  const { id } = params;
+  const { id } =  useParams();
   const [product, setProduct] = useState(null);
   const dispatch = useDispatch();
 
